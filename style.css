@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --verde: #92c71b !important;
+  --preto: #000000 !important;
+}
+
+body {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.verde {
+  color: var(--verde);
+}
+
+/*===== HEADER =====*/
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.nav-logo {
+  width: 150px;
+}
+
+.navbar-nav {
+  font-family: "Kanit-BoldItalic", sans-serif;
+  font-size: 16px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover,
+.active:hover,
+.active {
+  color: var(--verde);
+}
+
+.mascara {
+  width: 100%;
+  height: auto;
+  -webkit-mask-image: url(images/logo-mask1.png),
+    linear-gradient(to top, black 55%, transparent 50%);
+  mask-image: url(images/logo-mask1.png),
+    linear-gradient(to top, black 55%, transparent 50%);
+  -webkit-mask-position: cover;
+  mask-position: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  margin-top: -2rem;
+}
+
+/*===== MAIN =====*/
+
+.card {
+  border: none;
+}
+
+.sobre-btn {
+  color: #000 !important;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 40px;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 1rem 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Kanit-SemiBoldItalic", sans-serif;
+  border: 1px solid black;
+  width: 120px;
+}
+
+.sobre-btn:hover {
+  background-color: #000000;
+  color: white !important;
+}
+
+/*===== FOOTER =====*/
+.contactos {
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.dados {
+  font-size: 12px;
+  color: gray;
+}
+
+footer a {
+  color: white;
+}
