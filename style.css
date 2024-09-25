@@ -143,6 +143,10 @@ a:hover .hidden {
   color: #000;
 }
 
+.carousel-item img {
+  height: auto;
+}
+
 /*===== FOOTER =====*/
 .contactos {
   font-family: "Gilroy-Bold", sans-serif;
