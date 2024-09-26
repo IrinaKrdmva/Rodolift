@@ -68,7 +68,6 @@ nav a {
 
 .mascara {
   width: 100%;
-  height: auto;
   -webkit-mask-image: url(images/logo-mask1.png),
     linear-gradient(to top, black 55%, transparent 50%);
   mask-image: url(images/logo-mask1.png),
@@ -168,6 +167,14 @@ a:hover .hidden {
   font-size: 55px;
   font-family: "Kanit-MediumItalic";
   letter-spacing: 3px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .card-title-orcamento {

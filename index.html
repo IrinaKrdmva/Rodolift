@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="fonts/Gilroy/stylesheet.css" />
     <link rel="stylesheet" href="fonts/Kanit/stylesheet.css" />
     <link rel="stylesheet" href="fonts/Roboto/stylesheet.css" />
+    <!--BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- CSS LOCAL -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -28,7 +30,7 @@
       <!--NAVBAR-->
       <div class="row w-100 p-0 mx-auto text-uppercase">
         <div class="col p-0">
-          <nav class="navbar w-100 sticky-top bg-body-tertiary navbar-expand-lg px-5">
+          <nav class="navbar w-100 sticky-top navbar-expand-lg px-5">
             <div class="container-fluid d-flex mx-lg-5">
               <a class="navbar-brand" href="#">
                 <img
@@ -66,12 +68,13 @@
           </nav>
         </div>
       </div>
-      <div class="row w-100 p-0 m-0">
-        <div class="col p-0 m-0 position-absolute w-100"></div>
-          <img src="images/imagem-home.jpg" alt="Camiao Grua" class="mascara p-0" />
+      <div class="row p-0 m-0">
+        <div class="col p-0 m-0 position-absolute"></div>
+          <img src="images/imagem-home.jpg" alt="Camiao Grua" class="mascara p-0 object-fit-cover" />
         </div>
       </div>
     </header>
+
     <main class="container-fluid p-0 m-0">
 
       <!--CARD WE MOVE IT-->
@@ -147,21 +150,21 @@
         <div id="carouselExampleCaptions" class="carousel slide"  data-bs-wrap="true" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="4000">
-              <img src="images/carousel1.jpg" class="d-block w-100" alt="Camião Grua Verde">
+              <img src="images/carousel1.jpg" class="d-block w-100 object-fit-cover" alt="Camião Grua Verde">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Serviços</h5>
                 <h2>movimentação industrial de cargas</h2>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="images/carousel2.jpg" class="d-block w-100" alt="Camião Branco">
+              <img src="images/carousel2.jpg" class="d-block w-100 object-fit-cover" alt="Camião Branco">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Serviços</h5>
                 <h2>movimentação industrial de cargas</h2>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="images/carousel3.jpg" class="d-block w-100" alt="Camião Grua com rampa">
+              <img src="images/carousel3.jpg" class="d-block w-100 object-fit-cover" alt="Camião Grua com rampa">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Serviços</h5>
                 <h2>movimentação industrial de cargas</h2>
@@ -169,11 +172,11 @@
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <i class='bx bx-chevron-left fs-2' style='color:#ffffff' aria-hidden="true"></i>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <i class='bx bx-chevron-right fs-2' style='color:#ffffff' aria-hidden="true"></i>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
