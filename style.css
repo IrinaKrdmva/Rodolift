@@ -31,27 +31,33 @@ a {
 }
 
 /*===== HEADER =====*/
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
 
 nav {
+  position: fixed;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   transition: background-color 0.4s ease-in-out;
 }
-
-/* nav.scrolled {
+nav.scrolled {
   background-color: #000;
   opacity: 0.98;
-} */
+}
 
 .nav-logo {
   width: 250px;
 }
 
-/* nav.scrolled a {
+nav.scrolled a {
   color: white !important;
-} */
+}
 
 nav a {
   font-family: "Kanit-BoldItalic", sans-serif;
@@ -64,6 +70,12 @@ nav a {
 .active:hover,
 .active {
   color: var(--verde) !important;
+}
+
+/*===== MAIN =====*/
+
+.banner {
+  border: 3px solid red;
 }
 
 .mascara {
@@ -79,10 +91,8 @@ nav a {
   -webkit-mask-size: 100%;
   mask-size: 100%;
   margin-top: -2rem;
+  z-index: -1;
 }
-
-/*===== MAIN =====*/
-
 .card {
   border: none;
 }
@@ -150,6 +160,14 @@ a:hover .hidden {
   color: #000;
 }
 
+.carousel {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-item {
+  width: 80%;
+}
+
 .carousel-item img {
   height: 750px;
 }
@@ -169,8 +187,16 @@ a:hover .hidden {
   letter-spacing: 3px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.indicadores-carousel {
+  position: absolute;
+  gap: 15px;
+  bottom: 50px;
+  right: 180px;
+}
+
+.prev,
+.next {
+  background-color: transparent !important;
   border: 2px solid white;
   border-radius: 50%;
   width: 50px;
