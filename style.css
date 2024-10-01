@@ -37,7 +37,8 @@ header {
   z-index: 10;
 }
 
-nav {
+.navbar,
+.navbar2 {
   position: fixed;
   top: 0;
   display: flex;
@@ -46,24 +47,31 @@ nav {
   margin-bottom: 0;
   transition: background-color 0.4s ease-in-out;
 }
-nav.scrolled {
+.navbar.scrolled {
   background-color: #000;
   opacity: 0.98;
 }
 
 .nav-logo {
-  width: 250px;
+  width: 230px;
 }
 
-nav.scrolled a {
+.navbar.scrolled a {
   color: white !important;
 }
 
-nav a {
+.navbar a {
   font-family: "Kanit-BoldItalic", sans-serif;
   font-size: 16px;
   color: #000 !important;
   transition: color 0.4s ease-in-out;
+}
+
+.navbar2 a {
+  font-family: "Kanit-BoldItalic", sans-serif;
+  font-size: 16px;
+  transition: color 0.4s ease-in-out;
+  color: white !important;
 }
 
 .nav-link:hover,
@@ -73,6 +81,9 @@ nav a {
 }
 
 /*===== MAIN =====*/
+main {
+  margin-top: 10%;
+}
 
 .banner {
   border: 3px solid red;
@@ -109,7 +120,7 @@ nav a {
   text-transform: uppercase;
   font-family: "Kanit-SemiBoldItalic", sans-serif;
   border: 1px solid black;
-  width: 130px;
+  width: 30%;
 }
 
 .sobre-btn:hover {
@@ -235,6 +246,52 @@ a:hover .hidden {
 .orcamento-btn:hover {
   border: 1px solid #92c71b;
   background-color: white;
+}
+
+/*===== SOBRE =====*/
+
+.card-pretitle {
+  font-size: 13px;
+  font-family: "Kanit-LightItalic";
+  letter-spacing: 3px;
+  color: #92c71b;
+  font-size: 16px;
+}
+
+.card-title2 {
+  font-size: 90px;
+  color: #000;
+  font-family: "Kanit-SemiBoldItalic", sans-serif;
+}
+
+.card-subtitle {
+  font-family: "Gilroy-Light", sans-serif;
+  font-size: 35px;
+}
+
+.negrito {
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.card-text2 {
+  font-size: 22px;
+}
+
+.wemoveit {
+  height: 100vh;
+  background-color: black;
+  border: 1px solid red;
+  -webkit-mask-image: url(images/move_outline.png),
+    linear-gradient(to top, black 55%, transparent 50%);
+  mask-image: url(images/move_outline.png),
+    linear-gradient(to top, black 55%, transparent 50%);
+  -webkit-mask-position: cover;
+  mask-position: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  z-index: -1;
 }
 
 /*===== FOOTER =====*/
