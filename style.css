@@ -288,23 +288,44 @@ a:hover .hidden {
   mask-size: 100%;
   z-index: 10;
 }
-.slider-item img {
-  height: 200px;
-}
 
 /*===== EQUIPAMENTOS =====*/
-.wrapper {
-  overflow: hidden;
-  display: flex;
-  grid-auto-flow: row;
-  grid-auto-rows: 500px;
-  justify-items: stretch;
-  animation: scroll 10s linear infinite;
+.sub-infinito {
+  color: #92c71b;
 }
 
-@keyframes scroll {
-  to {
-    translate: calc(-4 * 300px);
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.wrapper-slide {
+  white-space: nowrap;
+  padding: 0 6rem;
+  animation: move-rtl 6000ms linear infinite;
+}
+
+.wrapper-slide2 {
+  white-space: nowrap;
+  padding: 0 6rem;
+  animation: move-ltr 6000ms linear infinite;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes move-ltr {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
 
