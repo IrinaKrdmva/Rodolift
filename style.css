@@ -35,10 +35,10 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
+  padding: 10px 0px;
 }
 
-.navbar,
-.navbar2 {
+.navbar {
   position: fixed;
   top: 0;
   display: flex;
@@ -53,7 +53,7 @@ header {
 }
 
 .nav-logo {
-  width: 230px;
+  width: 200px;
 }
 
 .navbar.scrolled a {
@@ -83,10 +83,6 @@ header {
 /*===== MAIN =====*/
 main {
   margin-top: 10%;
-}
-
-.banner {
-  border: 3px solid red;
 }
 
 .mascara {
@@ -259,14 +255,14 @@ a:hover .hidden {
 }
 
 .card-title2 {
-  font-size: 90px;
+  font-size: 78px;
   color: #000;
   font-family: "Kanit-SemiBoldItalic", sans-serif;
 }
 
 .card-subtitle {
   font-family: "Gilroy-Light", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .negrito {
@@ -278,20 +274,42 @@ a:hover .hidden {
 }
 
 .wemoveit {
-  height: 100vh;
-  background-color: black;
-  border: 1px solid red;
+  height: 50vh;
+  background-color: #000;
   -webkit-mask-image: url(images/move_outline.png),
-    linear-gradient(to top, black 55%, transparent 50%);
+    linear-gradient(to top, black 0%, transparent 0%);
   mask-image: url(images/move_outline.png),
-    linear-gradient(to top, black 55%, transparent 50%);
+    linear-gradient(to top, black 0%, transparent 0%);
   -webkit-mask-position: cover;
   mask-position: cover;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
   mask-size: 100%;
-  z-index: -1;
+  z-index: 10;
+}
+.slider-item img {
+  height: 200px;
+}
+
+/*===== EQUIPAMENTOS =====*/
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  grid-auto-flow: row;
+  grid-auto-rows: 500px;
+  justify-items: stretch;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    translate: calc(-4 * 300px);
+  }
+}
+
+.titulo-infinito {
+  font-size: 90px;
 }
 
 /*===== FOOTER =====*/
