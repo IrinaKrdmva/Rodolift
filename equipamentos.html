@@ -37,7 +37,7 @@
             class="navbar2 bg-black w-100 navbar-expand-lg px-5"
             data-bs-theme="dark"
           >
-            <div class="container-fluid d-flex mx-lg-5">
+            <div class="container-fluid2 d-flex mx-lg-5">
               <a class="navbar-brand" href="#">
                 <img
                   src="images/Logo-footer.png"
@@ -78,8 +78,8 @@
       <!--CARD SOBRE-->
       <div class="row justify-content-center align-items-center m-5">
         <div class="card m-3 p-3" style="max-width: 70%">
-          <div class="row justify-content-evenly">
-            <div class="col-12 col-xl-4">
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-6">
               <div class="card-body">
                 <h5 class="card-pretitle text-uppercase">Equipamentos</h5>
                 <h1 class="card-title2 pt-4">camião grua 5t</h1>
@@ -92,71 +92,108 @@
                   estruturas pré-montadas, mudanças industriais e movimentação
                   de vidros e apoio à construção civil.
                 </p>
-                <div class="btn-icone">
-                  <a href="#" class="btn orcamento-btn">Pedir Orçamento</a>
-                  <i class="bx bx-share-alt fs-5"></i>
-                  <span
-                    class="text-uppercase"
-                    style="font-size: 12px; margin: 0px 0px 15px 8px"
-                    >Partilhe</span
-                  >
-                </div>
               </div>
             </div>
-            <div class="col-12 col-xl-6">
+            <div class="col-12 col-xl-6 pt-4">
               <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
+                <div class="carousel-inner mt-5" style="height: 350px">
                   <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="..." />
+                    <img
+                      src="..."
+                      class="d-block w-100 object-fit-cover"
+                      alt="..."
+                    />
                   </div>
                   <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="..." />
+                    <img
+                      src="..."
+                      class="d-block w-100 object-fit-cover"
+                      alt="..."
+                    />
                   </div>
                   <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="..." />
+                    <img
+                      src="..."
+                      class="d-block w-100 object-fit-cover"
+                      alt="..."
+                    />
                   </div>
                 </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExample"
-                  data-bs-slide="prev"
+                <!--INDICADORES CAROUSEL-->
+                <div
+                  class="indicadores-equip w-100 d-flex flex-row justify-content-end px-2 py-2"
                 >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
+                  <button
+                    class="prev1"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev"
+                  >
+                    <i
+                      class="bx bx-chevron-left fs-2"
+                      style="color: #000"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="next1"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next"
+                  >
+                    <i
+                      class="bx bx-chevron-right fs-2"
+                      style="color: #000"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row p-0 m-0">
+              <div class="col-xl-4">
+                <a href="#" class="btn orcamento-btn mx-4">Pedir Orçamento</a>
+              </div>
+              <div class="col-xl-3 d-block my-auto px-0">
+                <i class="bx bx-share-alt fs-5"></i>
+                <button class="btn partilhe text-uppercase mb-1">
+                  Partilhe
                 </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExample"
-                  data-bs-slide="next"
+              </div>
+              <div class="col-xl-5 align-self-end text-end">
+                <p style="font-family: Kanit-LightItalic; font-size: 25px">
+                  <strong>setores</strong> que movemos
+                </p>
+              </div>
+            </div>
+            <div class="row p-0 m-0">
+              <div class="col-12 text-end">
+                <p
+                  style="
+                    font-family: Gilroy-Light;
+                    font-size: 18px;
+                    padding-left: 500px;
+                  "
                 >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                  O testemunho da nossa elevada qualidade e capacidade em todos
+                  os setores operacionais.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row text-end">
-        <div class="col">
-          <h1><strong>setores</strong> que movemos</h1>
-          <h4>
-            O testemunho da nossa elevada qualidade e capacidade em todos os
-            setores operacionais.
-          </h4>
-        </div>
-      </div>
+      <!--MARQUEE-->
       <div class="row mt-5">
         <div class="col">
-          <div class="wrapper">
+          <marquee
+            class="wrapper1"
+            scrollamount="7"
+            behavior="scroll"
+            direction="left"
+          >
             <div class="wrapper-slide">
               <span class="sub-infinito">01</span>
               <h1 class="titulo-infinito text-uppercase">Obras Públicas</h1>
@@ -173,16 +210,33 @@
               <span class="sub-infinito">04</span>
               <h1 class="titulo-infinito text-uppercase">Indústria</h1>
             </div>
-            <div class="wrapper-slide">
+            <div class="wrapper-slide" aria-hidden="true">
               <span class="sub-infinito">01</span>
               <h1 class="titulo-infinito text-uppercase">Obras Públicas</h1>
             </div>
-          </div>
+            <div class="wrapper-slide" aria-hidden="true">
+              <span class="sub-infinito">02</span>
+              <h1 class="titulo-infinito text-uppercase">Agricultura</h1>
+            </div>
+            <div class="wrapper-slide" aria-hidden="true">
+              <span class="sub-infinito">03</span>
+              <h1 class="titulo-infinito text-uppercase">Construção Civil</h1>
+            </div>
+            <div class="wrapper-slide" aria-hidden="true">
+              <span class="sub-infinito">04</span>
+              <h1 class="titulo-infinito text-uppercase">Indústria</h1>
+            </div>
+          </marquee>
         </div>
       </div>
       <div class="row mt-5">
         <div class="col">
-          <div class="wrapper">
+          <marquee
+            class="wrapper2"
+            scrollamount="7"
+            behavior="scroll"
+            direction="right"
+          >
             <div class="wrapper-slide2">
               <span class="sub-infinito">01</span>
               <h1 class="titulo-infinito text-uppercase">Obras Públicas</h1>
@@ -199,11 +253,23 @@
               <span class="sub-infinito">04</span>
               <h1 class="titulo-infinito text-uppercase">Indústria</h1>
             </div>
-            <div class="wrapper-slide2">
+            <div class="wrapper-slide2" aria-hidden="true">
               <span class="sub-infinito">01</span>
               <h1 class="titulo-infinito text-uppercase">Obras Públicas</h1>
             </div>
-          </div>
+            <div class="wrapper-slide2" aria-hidden="true">
+              <span class="sub-infinito">02</span>
+              <h1 class="titulo-infinito text-uppercase">Agricultura</h1>
+            </div>
+            <div class="wrapper-slide2" aria-hidden="true">
+              <span class="sub-infinito">03</span>
+              <h1 class="titulo-infinito text-uppercase">Construção Civil</h1>
+            </div>
+            <div class="wrapper-slide2" aria-hidden="true">
+              <span class="sub-infinito">04</span>
+              <h1 class="titulo-infinito text-uppercase">Indústria</h1>
+            </div>
+          </marquee>
         </div>
       </div>
     </main>

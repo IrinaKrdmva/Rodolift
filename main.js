@@ -7,6 +7,6 @@ document.addEventListener("scroll", () => {
     logo.setAttribute("src", "images/Logo-footer.png");
   } else {
     nav.classList.remove("scrolled");
-    logo.setAttribute("src", "images/Logo-Nav.png");
+    logo.setAttribute("src", "images/Logo-Nav.jpg");
   }
 });

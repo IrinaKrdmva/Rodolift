@@ -37,7 +37,7 @@
             class="navbar2 bg-black w-100 navbar-expand-lg px-5"
             data-bs-theme="dark"
           >
-            <div class="container-fluid d-flex mx-lg-5">
+            <div class="container-fluid2 d-flex mx-lg-5">
               <a class="navbar-brand" href="#">
                 <img
                   src="images/Logo-footer.png"
@@ -96,6 +96,21 @@
                   com total pontualidade e segurança. <br />
                   Seguimos juntos!
                 </p>
+                <div class="row">
+                  <div class="col col-xl-6 text-start px-3">
+                    <a
+                      href="#"
+                      class="btn btn-outline-secondary sobre-btn w-100"
+                      >Vamos falar</a
+                    >
+                  </div>
+                  <div class="col col-xl-3 d-block my-auto">
+                    <i class="bx bx-share-alt"></i>
+                    <button class="btn partilhe text-uppercase mb-1">
+                      Partilhe
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-12 col-xl-6">
@@ -107,61 +122,62 @@
               />
             </div>
           </div>
-          <div class="row">
-            <div class="col-3 text-start px-4">
-              <a href="#" class="btn btn-outline-secondary sobre-btn w-100"
-                >Vamos falar</a
-              >
-            </div>
-            <div class="col-3 d-block my-auto">
-              <i class="bx bx-share-alt fs-5"></i>
-              <span
-                class="text-uppercase"
-                style="font-size: 12px; margin: 0px 0px 15px 8px"
-                >Partilhe</span
-              >
-            </div>
-          </div>
         </div>
       </div>
-      <div class="row justify-content-center align-items-center">
-        <!--GALERIA SOBRE-->
-        <div class="col galeria border border-danger position-relative">
-          <div class="col-12 wemoveit"></div>
+      <!--GALERIA SOBRE-->
+      <div
+        class="row justify-content-center align-items-center border border-danger"
+      >
+        <div class="col galeria p-0">
+          <div class="col wemoveit">
+            <img
+              src="images/move_outline.png"
+              alt=""
+              class="we-img img-fluid"
+            />
+          </div>
           <div
             id="carousel-galeria"
             class="carousel slide text-center"
-            data-bs-slide="carousel"
-            data-bs-ride="true"
+            data-bs-wrap="true"
+            data-bs-ride="carousel"
           >
             <div class="carousel-inner">
-              <div class="carousel-item active col-lg-4">
-                <img
-                  src="images/galeria-sobre1.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
+              <div class="carousel-item active w-100" data-bs-interval="2000">
+                <div class="row" style="height: 500px">
+                  <div class="col-lg-4 p-0 m-0">
+                    <img
+                      src="images/galeria-sobre1.jpg"
+                      alt="..."
+                      class="d-block w-100 object-fit-cover"
+                    />
+                  </div>
+                  <div class="col-lg-4 p-0 m-0">
+                    <img
+                      src="images/galeria-sobre2.jpg"
+                      class="d-block w-100 object-fit-cover"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-lg-4 p-0 m-0">
+                    <img
+                      src="images/galeria-sobre3.jpg"
+                      class="d-block w-100 object-fit-cover"
+                      alt="..."
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="carousel-item col-lg-4">
-                <img
-                  src="images/galeria-sobre2.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item col-lg-4">
-                <img
-                  src="images/galeria-sobre3.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item col-lg-4">
-                <img
-                  src="images/galeria-sobre4.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
+              <div class="carousel-item w-100">
+                <div class="row" style="height: 500px">
+                  <div class="col-lg-4 p-0 m-0">
+                    <img
+                      src="images/galeria-sobre4.jpg"
+                      class="d-block w-100 object-fit-cover"
+                      alt="..."
+                    />
+                  </div>
+                </div>
               </div>
             </div>
             <button
