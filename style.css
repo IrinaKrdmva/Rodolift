@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -281,31 +283,28 @@ a:hover .hidden {
   font-size: 12px;
   background-color: transparent !important;
   border: none;
+  cursor: pointer;
 }
 
-.we-img {
-  height: auto;
-  width: 100%;
-  background-color: transparent !important;
+.wemoveit {
+  font-family: "Dosis", sans-serif !important;
+  font-weight: 400;
+  font-style: italic;
+  text-align: start;
+  font-size: 22vw;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
   position: absolute;
-  /* bottom: -5%; */
-  z-index: 10;
+  bottom: -38vw;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  line-height: 1;
+  display: block;
+  width: 100%;
+  padding-top: 0;
 }
-/* .wemoveit {
-  height: 50vh;
-  background-color: #000;
-  -webkit-mask-image: url(images/move_outline.png),
-    linear-gradient(to top, black 0%, transparent 0%);
-  mask-image: url(images/move_outline.png),
-    linear-gradient(to top, black 0%, transparent 0%);
-  -webkit-mask-position: cover;
-  mask-position: cover;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
-  z-index: 10;
-} */
 
 #carousel-galeria .carousel-inner1 .carousel-item1 {
   display: flex;
@@ -324,10 +323,10 @@ a:hover .hidden {
   margin-top: 10px;
 }
 
-.prev1,
-.next1 {
+#prev,
+#next {
   background-color: transparent !important;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 50%;
   width: 45px;
   height: 45px;
