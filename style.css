@@ -44,11 +44,18 @@ header {
   position: fixed;
   top: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-left: 0;
   margin-bottom: 0;
   transition: background-color 0.4s ease-in-out;
 }
+
+.navbar-toggler {
+  border: none;
+  font-size: 40px;
+  color: #000;
+}
+
 .navbar.scrolled {
   background-color: #000;
   opacity: 0.98;
@@ -58,7 +65,8 @@ header {
   width: 200px;
 }
 
-.navbar.scrolled a {
+.navbar.scrolled a,
+.navbar.scrolled .navbar-toggler {
   color: white !important;
 }
 
@@ -378,4 +386,16 @@ a:hover .hidden {
 
 footer a {
   color: white;
+}
+
+@media all and (max-width: 425px) {
+  .nav-logo {
+    width: 180px;
+  }
+}
+
+@media all and (max-width: 578px) {
+  .mascara {
+    margin-top: 2rem;
+  }
 }
