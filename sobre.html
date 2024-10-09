@@ -34,10 +34,10 @@
       <div class="row w-100 p-0 m-0 text-uppercase">
         <div class="col p-0">
           <nav
-            class="navbar2 bg-black w-100 navbar-expand-lg px-5"
+            class="navbar2 bg-black w-100 navbar-expand-lg px-md-5"
             data-bs-theme="dark"
           >
-            <div class="container-fluid2 d-flex mx-lg-5">
+            <div class="container-fluid2 d-flex justify-content-between">
               <a class="navbar-brand" href="index.html">
                 <img
                   src="images/Logo-footer.png"
@@ -45,22 +45,24 @@
                   class="nav-logo p-2"
                 />
               </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon text-light"></span>
-              </button>
+              <div class="col-3 d-lg-none text-end pt-3">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="bx bx-menu"></i>
+                </button>
+              </div>
               <div
                 class="collapse navbar-collapse justify-content-end"
                 id="navbarNavAltMarkup"
               >
-                <div class="navbar-nav my-auto gap-4">
+                <div class="navbar-nav my-auto gap-lg-4">
                   <a
                     class="nav-link active"
                     aria-current="page"
@@ -99,15 +101,20 @@
                   com total pontualidade e segurança. <br />
                   Seguimos juntos!
                 </p>
-                <div class="row">
-                  <div class="col col-xl-6 text-start px-3">
+                <div class="row border border-success">
+                  <div
+                    class="col col-xl-6 text-start px-3 border border-danger"
+                  >
                     <a
                       href="#"
                       class="btn btn-outline-secondary sobre-btn w-100"
+                      style="max-width: fit-content"
                       >Vamos falar</a
                     >
                   </div>
-                  <div class="col col-xl-3 d-block my-auto">
+                  <div
+                    class="col col-xl-3 d-block m-auto border border-primary"
+                  >
                     <i class="bx bx-share-alt"></i>
                     <button class="btn partilhe text-uppercase mb-1">
                       Partilhe

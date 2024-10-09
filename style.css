@@ -66,7 +66,8 @@ header {
 }
 
 .navbar.scrolled a,
-.navbar.scrolled .navbar-toggler {
+.navbar.scrolled .navbar-toggler,
+.navbar2 .navbar-toggler {
   color: white !important;
 }
 
@@ -130,7 +131,7 @@ main {
   text-transform: uppercase;
   font-family: "Kanit-SemiBoldItalic", sans-serif;
   border: 1px solid black;
-  width: 30%;
+  max-width: 100px;
 }
 
 .sobre-btn:hover {
@@ -154,13 +155,15 @@ main {
 }
 
 .hidden img {
+  border: 1px solid red;
   max-width: 28%;
-  margin-left: 200px;
+  margin-left: 7vw;
   z-index: -1;
 }
 
 .hidden span {
-  margin-right: 550px;
+  border: 1px solid blue;
+  margin-right: 22vw;
   font-size: 13px;
   font-family: "Kanit-LightItalic";
   letter-spacing: 3px;
@@ -189,10 +192,6 @@ a:hover .hidden {
   width: 80%;
 }
 
-.carousel-item img {
-  height: 750px;
-}
-
 .carousel-caption h5 {
   font-size: 16px;
   font-family: "Kanit-LightItalic";
@@ -211,8 +210,8 @@ a:hover .hidden {
 .indicadores-carousel {
   position: absolute;
   gap: 15px;
-  bottom: 50px;
-  right: 180px;
+  bottom: 5vh;
+  right: 10vw;
 }
 
 .prev,
@@ -388,14 +387,71 @@ footer a {
   color: white;
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 480px) {
   .nav-logo {
     width: 180px;
   }
+  .equipamentos a h1 {
+    font-size: 40px;
+  }
 }
 
-@media all and (max-width: 578px) {
+@media all and (max-width: 576px) {
   .mascara {
     margin-top: 2rem;
+  }
+
+  .card-title-orcamento {
+    font-size: 55px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .card-we {
+    max-width: 80% !important;
+  }
+
+  .equipamentos a h1 {
+    font-size: 50px; /*Não*/
+  }
+
+  .carousel-caption h2 {
+    font-size: 40px; /*Não*/
+  }
+
+  .card-title-orcamento {
+    font-size: 75px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .equipamentos a h1 {
+    font-size: 85px;
+  }
+
+  .equipamentos a h5 {
+    font-size: 30px;
+  }
+
+  a:hover .hidden {
+    margin-top: -25%;
+  }
+
+  .hidden img {
+    margin-left: 0 !important;
+  }
+
+  .hidden span {
+    margin-right: 5vw !important;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .hidden img {
+    margin-left: 2vw;
+  }
+
+  .hidden span {
+    margin-right: 15vw;
   }
 }
