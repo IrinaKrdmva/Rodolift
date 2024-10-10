@@ -31,13 +31,15 @@
   <body>
     <header class="container-fluid p-0 m-0">
       <!--NAVBAR-->
-      <div class="row w-100 p-0 m-0 text-uppercase">
+      <div class="row w-100 p-0 mx-auto text-uppercase">
         <div class="col p-0">
           <nav
-            class="navbar2 bg-black w-100 navbar-expand-lg px-md-5"
+            class="navbar2 bg-black w-100 navbar-expand-lg px-5"
             data-bs-theme="dark"
           >
-            <div class="container-fluid2 d-flex justify-content-between">
+            <div
+              class="container-fluid2 d-flex justify-content-between mx-lg-5"
+            >
               <a class="navbar-brand" href="index.html">
                 <img
                   src="images/Logo-footer.png"
@@ -81,12 +83,12 @@
     </header>
     <main class="container-fluid">
       <!--CARD SOBRE-->
-      <div class="row justify-content-center align-items-center m-5">
+      <div class="row justify-content-center align-items-center m-lg-5">
         <div class="card m-3 p-3" style="max-width: 80%">
           <div class="row justify-content-evenly">
             <div class="col-12 col-xl-6">
               <div class="card-body text-black">
-                <h5 class="card-pretitle text-uppercase">Rodolift</h5>
+                <h5 class="card-pretitle text-uppercase mt-4">Rodolift</h5>
                 <h1 class="card-title2">sobre nós</h1>
                 <h3 class="card-subtitle mt-5">
                   A <span class="negrito">Rodolift</span> emerge da necessidade
@@ -101,20 +103,16 @@
                   com total pontualidade e segurança. <br />
                   Seguimos juntos!
                 </p>
-                <div class="row border border-success">
-                  <div
-                    class="col col-xl-6 text-start px-3 border border-danger"
-                  >
+                <div class="row d-flex flex-nowrap justify-content-start">
+                  <div class="col-6">
                     <a
                       href="#"
-                      class="btn btn-outline-secondary sobre-btn w-100"
-                      style="max-width: fit-content"
+                      class="btn btn-outline-secondary sobre-btn"
+                      style="max-width: 200px"
                       >Vamos falar</a
                     >
                   </div>
-                  <div
-                    class="col col-xl-3 d-block m-auto border border-primary"
-                  >
+                  <div class="col-6 d-block m-auto">
                     <i class="bx bx-share-alt"></i>
                     <button class="btn partilhe text-uppercase mb-1">
                       Partilhe
@@ -136,11 +134,11 @@
       </div>
       <!--GALERIA SOBRE-->
       <div
-        class="row justify-content-center align-items-center"
+        class="row d-flex justify-content-center align-items-center"
         style="margin-top: 15%"
       >
+        <div class="col-12 wemoveit">we move it!</div>
         <div class="col galeria p-0">
-          <div class="col-12 wemoveit">we move it!</div>
           <div
             id="carousel-galeria"
             class="carousel slide text-center"
@@ -148,23 +146,23 @@
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
-              <div class="carousel-item active w-100" data-bs-interval="2000">
+              <div class="carousel-item active w-100" data-bs-interval="3000">
                 <div class="row" style="height: 500px">
-                  <div class="col-lg-4 p-0 m-0">
+                  <div class="col-4 p-0 m-0 border border-success">
                     <img
                       src="images/galeria-sobre1.jpg"
                       alt="..."
-                      class="d-block w-100 object-fit-cover"
+                      class="d-block w-100 object-fit-cover border border-danger"
                     />
                   </div>
-                  <div class="col-lg-4 p-0 m-0">
+                  <div class="col-4 p-0 m-0">
                     <img
                       src="images/galeria-sobre2.jpg"
                       class="d-block w-100 object-fit-cover"
                       alt="..."
                     />
                   </div>
-                  <div class="col-lg-4 p-0 m-0">
+                  <div class="col-4 p-0 m-0">
                     <img
                       src="images/galeria-sobre3.jpg"
                       class="d-block w-100 object-fit-cover"
@@ -173,12 +171,12 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item w-100">
+              <div class="carousel-item w-100" data-bs-interval="3000">
                 <div class="row" style="height: 500px">
-                  <div class="col-lg-4 p-0 m-0">
+                  <div class="col-4 p-0 m-0">
                     <img
                       src="images/galeria-sobre4.jpg"
-                      class="d-block w-100 object-fit-cover"
+                      class="d-block w-100 h-100 object-fit-cover"
                       alt="..."
                     />
                   </div>

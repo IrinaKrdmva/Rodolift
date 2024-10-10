@@ -143,10 +143,10 @@ main {
   font-family: Kanit-BoldItalic;
 }
 
-.equipamentos a h1 {
+.equipamentos h1 {
   font-size: 100px;
 }
-.equipamentos a h5 {
+.equipamentos h5 {
   font-size: 30px;
 }
 
@@ -184,8 +184,18 @@ a:hover .hidden {
   color: #000;
 }
 
-.carousel {
-  background-color: rgba(0, 0, 0, 0.7);
+.carousel-mask {
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to right, black 40%, transparent 100%);
+  mask-image: linear-gradient(to right, black 40%, transparent 100%);
+  -webkit-mask-position: cover;
+  mask-position: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  margin-top: -2rem;
+  z-index: -1;
 }
 
 .carousel-item {
@@ -286,6 +296,12 @@ a:hover .hidden {
   font-size: 22px;
 }
 
+.partilhe-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .partilhe {
   font-size: 12px;
   background-color: transparent !important;
@@ -303,7 +319,7 @@ a:hover .hidden {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   position: absolute;
-  bottom: -38vw;
+  top: 110vh;
   left: 0;
   right: 0;
   z-index: 100;
@@ -312,17 +328,9 @@ a:hover .hidden {
   width: 100%;
   padding-top: 0;
 }
-
-#carousel-galeria .carousel-inner1 .carousel-item1 {
-  display: flex;
-  justify-content: center;
+.galeria img {
+  height: 100%;
 }
-
-#carousel-galeria .carousel-item1 .col-lg-4 {
-  flex: 1 0 calc(100% / 3); /* Cada um ocupa 1/3 do tamanho do ecrã */
-  min-width: calc(100% / 3);
-}
-
 /*===== EQUIPAMENTOS =====*/
 .indicadores-equip {
   position: absolute;
@@ -338,8 +346,16 @@ a:hover .hidden {
   width: 45px;
   height: 45px;
 }
+.texto-equipamento {
+  font-family: "Gilroy-Light", sans-serif;
+  font-size: 18px;
+  padding-left: 30vw;
+}
 
 .sub-infinito {
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-style: italic;
   color: #92c71b;
 }
 
@@ -387,49 +403,32 @@ footer a {
   color: white;
 }
 
-@media all and (max-width: 480px) {
-  .nav-logo {
-    width: 180px;
-  }
-  .equipamentos a h1 {
-    font-size: 40px;
+/*=== MEDIA QUERIES ===*/
+@media all and (max-width: 1440px) {
+  .wemoveit {
+    top: 115vh;
   }
 }
 
-@media all and (max-width: 576px) {
-  .mascara {
-    margin-top: 2rem;
+@media all and (max-width: 1200px) {
+  .hidden img {
+    margin-left: 2vw;
   }
 
-  .card-title-orcamento {
-    font-size: 55px;
+  .hidden span {
+    margin-right: 15vw;
   }
-}
-
-@media all and (max-width: 768px) {
-  .card-we {
-    max-width: 80% !important;
-  }
-
-  .equipamentos a h1 {
-    font-size: 50px; /*Não*/
-  }
-
-  .carousel-caption h2 {
-    font-size: 40px; /*Não*/
-  }
-
-  .card-title-orcamento {
-    font-size: 75px;
+  .wemoveit {
+    top: 190vh;
   }
 }
 
 @media all and (max-width: 900px) {
-  .equipamentos a h1 {
+  .equipamentos h1 {
     font-size: 85px;
   }
 
-  .equipamentos a h5 {
+  .equipamentos h5 {
     font-size: 30px;
   }
 
@@ -444,14 +443,80 @@ footer a {
   .hidden span {
     margin-right: 5vw !important;
   }
+
+  .card-title2 {
+    font-size: 60px;
+  }
+  .wemoveit {
+    top: 170vh;
+    font-size: 20vw;
+  }
+  .card-equip {
+    max-width: 80% !important;
+  }
 }
 
-@media all and (max-width: 1200px) {
-  .hidden img {
-    margin-left: 2vw;
+@media all and (max-width: 768px) {
+  .card-we {
+    max-width: 80% !important;
   }
 
-  .hidden span {
-    margin-right: 15vw;
+  .equipamentos h1 {
+    font-size: 55px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 40px;
+  }
+
+  .card-title-orcamento {
+    font-size: 75px;
+  }
+  .card-subtitle {
+    font-size: 25px;
+  }
+  .texto-equipamento {
+    padding: 0;
+  }
+  .titulo-infinito {
+    font-size: 70px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .mascara {
+    margin-top: 2rem;
+  }
+
+  .card-title-orcamento {
+    font-size: 55px;
+  }
+  .wemoveit {
+    top: 185vh;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .nav-logo {
+    width: 180px;
+  }
+  .equipamentos h1 {
+    font-size: 40px !important;
+  }
+  .carousel-caption h2 {
+    font-size: 16px;
+  }
+  .card-title2 {
+    font-size: 40px;
+  }
+  .card-text2 {
+    font-size: 18px;
+  }
+  .wemoveit {
+    top: 140vh;
+    font-size: 20vw;
+  }
+  .titulo-infinito {
+    font-size: 40px;
   }
 }
