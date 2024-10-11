@@ -185,9 +185,10 @@ a:hover .hidden {
 }
 
 .carousel-mask {
+  background-color: #000;
   width: 100%;
-  -webkit-mask-image: linear-gradient(to right, black 40%, transparent 100%);
-  mask-image: linear-gradient(to right, black 40%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
+  mask-image: linear-gradient(to right, black 70%, transparent 100%);
   -webkit-mask-position: cover;
   mask-position: cover;
   -webkit-mask-repeat: no-repeat;
