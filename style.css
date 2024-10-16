@@ -44,7 +44,6 @@ header {
   position: fixed;
   top: 0;
   display: flex;
-  flex-wrap: nowrap;
   padding-left: 0;
   margin-bottom: 0;
   transition: background-color 0.4s ease-in-out;
@@ -143,6 +142,12 @@ main {
   font-family: Kanit-BoldItalic;
 }
 
+.equipamentos a {
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+}
+
 .equipamentos h1 {
   font-size: 100px;
 }
@@ -154,20 +159,32 @@ main {
   display: none;
 }
 
-.hidden img {
-  max-width: 28%;
-  margin-left: 10vw;
-  z-index: -1;
-  border: 1px solid red;
+.equipamentos a img {
+  position: absolute;
+  left: -20%;
+  top: 50%;
+  transform: translateY(-50%);
+  object-fit: contain;
+  z-index: -10;
 }
 
-.hidden span {
-  border: 1px solid blue;
-  margin-right: 29vw;
-  font-size: 13px;
+.mini-titulo {
+  font-size: 16px;
   font-family: "Kanit-LightItalic";
   letter-spacing: 3px;
-  padding-top: 1rem;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+a:hover .hidden {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  z-index: -1;
 }
 
 .equipamentos a:hover h1,
@@ -176,19 +193,11 @@ main {
   transition: all 0.5s ease;
 }
 
-a:hover .hidden {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  margin-top: -12rem;
-  color: #000;
-}
-
 .carousel {
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(0, 0, 0, 1) 95%
+    rgba(0, 0, 0, 1) 99%
   );
 }
 
@@ -310,22 +319,21 @@ a:hover .hidden {
 
 .wemoveit {
   font-family: "Dosis", sans-serif !important;
-  font-weight: 400;
-  font-style: italic;
   text-align: start;
   font-size: 22vw;
-  color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
+  color: transparent;
   position: absolute;
-  top: 110vh;
+  top: -15vw;
   left: 0;
   right: 0;
   z-index: 100;
   line-height: 1;
+  font-style: italic;
   display: block;
   width: 100%;
-  padding-top: 0;
+  padding: 0;
 }
 .galeria img {
   height: 100%;
@@ -393,52 +401,16 @@ footer a {
 }
 
 /*=== MEDIA QUERIES ===*/
-@media all and (max-width: 1440px) {
-  .wemoveit {
-    top: 115vh;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .hidden img {
-    margin-left: 2vw;
-  }
-
-  .hidden span {
-    margin-right: 15vw;
-  }
-  .wemoveit {
-    top: 190vh;
-  }
-}
 
 @media all and (max-width: 900px) {
   .equipamentos h1 {
     font-size: 85px;
   }
-
   .equipamentos h5 {
     font-size: 30px;
   }
-
-  a:hover .hidden {
-    margin-top: -25%;
-  }
-
-  .hidden img {
-    margin-left: 0 !important;
-  }
-
-  .hidden span {
-    margin-right: 5vw !important;
-  }
-
   .card-title2 {
     font-size: 60px;
-  }
-  .wemoveit {
-    top: 170vh;
-    font-size: 20vw;
   }
   .card-equip {
     max-width: 80% !important;
@@ -451,7 +423,7 @@ footer a {
   }
 
   .equipamentos h1 {
-    font-size: 55px;
+    font-size: 60px;
   }
 
   .carousel-caption h2 {
@@ -470,21 +442,17 @@ footer a {
   .titulo-infinito {
     font-size: 70px;
   }
-  .wemoveit {
-    top: 140vh;
-  }
 }
 
 @media all and (max-width: 576px) {
   .mascara {
     margin-top: 2rem;
   }
-
+  .equipamentos h1 {
+    font-size: 50px;
+  }
   .card-title-orcamento {
     font-size: 55px;
-  }
-  .wemoveit {
-    top: 185vh;
   }
 }
 
@@ -503,10 +471,6 @@ footer a {
   }
   .card-text2 {
     font-size: 18px;
-  }
-  .wemoveit {
-    top: 140vh;
-    font-size: 20vw;
   }
   .titulo-infinito {
     font-size: 40px;
