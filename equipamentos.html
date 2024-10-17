@@ -31,52 +31,53 @@
   <body>
     <header class="container-fluid p-0 m-0">
       <!--NAVBAR-->
-      <div class="row w-100 p-0 mx-auto text-uppercase">
-        <div class="col p-0">
-          <nav
-            class="navbar2 bg-black w-100 navbar-expand-lg px-5"
-            data-bs-theme="dark"
-          >
-            <div
-              class="container-fluid2 d-flex justify-content-between mx-lg-5"
+      <div class="row w-100 p-0 mx-auto">
+        <div class="col p-0 m-0">
+          <nav class="pt-2 nav2">
+            <ul class="sidebar pt-4">
+              <li class="d-flex">
+                <a href="index.html">
+                  <img
+                    src="images/Logo-footer.png"
+                    alt="Logo Rodolift"
+                    style="color: #000"
+                  />
+                </a>
+                <a href="#" onclick="hideSidebar()" class="justify-content-end">
+                  <img
+                    class="toggler1 me-2"
+                    src="images/close.png"
+                    alt="Close menu"
+                  />
+                </a>
+              </li>
+              <li class="mt-5">
+                <a href="sobre.html">Sobre</a>
+              </li>
+              <li><a href="equipamentos.html">Equipamentos</a></li>
+              <li><a href="#">Serviços</a></li>
+              <li><a href="#">Contactar</a></li>
+            </ul>
+            <ul
+              class="d-flex text-uppercase justify-content-end align-items-center p-3"
             >
-              <a class="navbar-brand" href="index.html">
-                <img
-                  src="images/Logo-footer.png"
-                  alt="Logo Rodolift"
-                  class="nav-logo p-2"
-                />
-              </a>
-              <div class="col-3 d-lg-none text-end pt-3">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNavAltMarkup"
-                  aria-controls="navbarNavAltMarkup"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <i class="bx bx-menu"></i>
-                </button>
-              </div>
-              <div
-                class="collapse navbar-collapse justify-content-end"
-                id="navbarNavAltMarkup"
-              >
-                <div class="navbar-nav my-auto gap-lg-4">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="sobre.html"
-                    >Sobre</a
-                  >
-                  <a class="nav-link" href="equipamentos.html">Equipamentos</a>
-                  <a class="nav-link" href="#">Serviços</a>
-                  <a class="nav-link" href="#">Contactar</a>
-                </div>
-              </div>
-            </div>
+              <li>
+                <a href="index.html">
+                  <img src="images/Logo-footer.png" alt="Logo Rodolift" />
+                </a>
+              </li>
+              <li class="d-none d-lg-block"><a href="sobre.html">Sobre</a></li>
+              <li class="d-none d-lg-block">
+                <a href="equipamentos.html">Equipamentos</a>
+              </li>
+              <li class="d-none d-lg-block"><a href="#">Serviços</a></li>
+              <li class="d-none d-lg-block"><a href="#">Contactar</a></li>
+              <li onclick="showSidebar()" class="d-lg-none d-block">
+                <a href="#">
+                  <img class="toggler1" src="images/menu.png" alt="Menu" />
+                </a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>

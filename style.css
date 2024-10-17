@@ -35,17 +35,18 @@ a {
 /*===== HEADER =====*/
 header {
   width: 100%;
-  border: 1px solid green;
   position: fixed;
   top: 0;
   z-index: 10;
-  padding: 10px 0px;
+  padding: 0;
 }
 
-nav {
-  min-height: 100px;
-  border: 1px solid red;
+.nav1 {
   background-color: white;
+}
+
+.nav2 {
+  background-color: var(--preto);
 }
 
 nav ul {
@@ -60,14 +61,20 @@ nav li {
 nav li:first-child {
   margin-right: auto;
 }
+.nav1 a {
+  color: var(--preto);
+}
 
+.nav2 a {
+  color: white;
+}
 nav a {
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: var(--preto);
+  font-family: "Kanit-BoldItalic", sans-serif;
 }
 
 nav a:hover,
@@ -97,19 +104,26 @@ nav img {
   background-color: var(--preto);
   display: none;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  transition: all 0.6s ease;
 }
 
 .sidebar li {
   width: 100%;
+  margin: 10px 0px;
 }
 
 .sidebar a {
   width: 100%;
   color: white;
+  font-size: 45px;
+  font-family: "Kanit-Regular", sans-serif;
+  font-style: italic;
 }
-.toggler {
+.sidebar a:hover {
+  text-decoration: underline;
+}
+.toggler,
+.toggler1 {
   width: 50px;
 }
 
@@ -382,7 +396,7 @@ a:hover .hidden {
   font-weight: 600;
   letter-spacing: 3px;
   font-style: italic;
-  color: var(--preto);
+  color: var(--verde);
 }
 
 .wrapper {
@@ -477,7 +491,7 @@ footer a {
 
 @media all and (max-width: 480px) {
   nav img {
-    width: 180px;
+    width: 170px;
   }
   .equipamentos h1 {
     font-size: 40px !important;

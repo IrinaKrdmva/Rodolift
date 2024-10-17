@@ -29,36 +29,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="container-fluid m-0">
+    <header class="container-fluid m-0 p-0">
       <!--NAVBAR-->
-      <div class="row w-100 p-0 mx-auto text-uppercase">
+      <div class="row w-100 p-0 mx-auto">
         <div class="col p-0 m-0">
-          <nav>
-            <ul class="sidebar">
-              <li>
-                <a href="#">
-                  <img
-                    src="images/Logo-footer.png"
-                    alt="Logo Rodolift"
-                    style="color: #000"
-                  />
+          <nav class="pt-2 nav1">
+            <ul class="sidebar pt-4">
+              <li class="d-flex">
+                <a href="index.html">
+                  <img src="images/Logo-footer.png" alt="Logo Rodolift" />
                 </a>
-              </li>
-              <li onclick="hideSidebar()">
-                <a href="#">
+                <a href="#" onclick="hideSidebar()" class="justify-content-end">
                   <img
-                    class="toggler"
+                    class="toggler1 me-2"
                     src="images/close.png"
                     alt="Close menu"
                   />
                 </a>
               </li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Equipamentos</a></li>
+              <li class="mt-5">
+                <a href="sobre.html">Sobre</a>
+              </li>
+              <li><a href="equipamentos.html">Equipamentos</a></li>
               <li><a href="#">Serviços</a></li>
               <li><a href="#">Contactar</a></li>
             </ul>
-            <ul class="d-flex justify-content-end align-items-center p-3">
+            <ul
+              class="d-flex text-uppercase justify-content-end align-items-center p-3"
+            >
               <li>
                 <a href="index.html">
                   <img
@@ -68,13 +66,15 @@
                   />
                 </a>
               </li>
-              <li class="d-none d-lg-block"><a href="#">Sobre</a></li>
-              <li class="d-none d-lg-block"><a href="#">Equipamentos</a></li>
+              <li class="d-none d-lg-block"><a href="sobre.html">Sobre</a></li>
+              <li class="d-none d-lg-block">
+                <a href="equipamentos.html">Equipamentos</a>
+              </li>
               <li class="d-none d-lg-block"><a href="#">Serviços</a></li>
               <li class="d-none d-lg-block"><a href="#">Contactar</a></li>
-              <li onclick="showSidebar()" class="d-xl-none d-block">
+              <li onclick="showSidebar()" class="d-lg-none d-block">
                 <a href="#">
-                  <img class="toggler" src="images/menu.png" alt="Menu" />
+                  <img class="toggler" src="images/menu-black.png" alt="Menu" />
                 </a>
               </li>
             </ul>
